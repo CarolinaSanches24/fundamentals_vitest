@@ -5,7 +5,7 @@
   "main": "./api/src/infra/server.ts",
   "scripts": {
     "start": "tsc && node dist/app.js",
-    "test": "vitest",
+    "test": "vitest watch",
     "dev": "nodemon ./api/src/infra/server.ts"
   },
   "keywords": [],

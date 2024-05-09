@@ -2,7 +2,7 @@ import { GenericContainer, Network, StartedNetwork, StartedTestContainer } from 
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { RedisClient } from "../../api/services/redis/redisClient";
 
-describe("Conexão ao Redis", async () => {
+describe("Connect Redis", async () => {
   let redisContainer: StartedTestContainer | undefined;
   let network: StartedNetwork | undefined;
   let redisClient: RedisClient;
