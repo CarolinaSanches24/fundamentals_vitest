@@ -12,7 +12,7 @@ describe("Connect Redis", async () => {
     network = await new Network().start();
 
 
-    redisContainer = await new GenericContainer("redis:latest")
+    redisContainer = await new GenericContainer("redis:alpine")
       .withName("test_redis")
       .withExposedPorts(6379)
       .withNetworkMode(network.getName())
